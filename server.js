@@ -31,6 +31,9 @@ if (process.env.NODE_ENV === "development") {
     next();
   });
 }
+app.get('/',()=>{
+  res.send('hello from api!');
+})
 
 app.use("/api", require("./routes/authRoutes"));
 app.use("/api", require("./routes/walletRoutes"));
