@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === "development") {
     next();
   });
 }
-app.get('/',()=>{
+app.get('/',(req,res)=>{
   res.send('hello from api!');
 })
 
